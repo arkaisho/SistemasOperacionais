@@ -11,7 +11,7 @@ Trem::Trem(int ID, int x, int y){
 
 void Trem::setVelocidade(int value){
     if (value!=0) {
-        this->velocidade = 100/value;
+        this->velocidade = 1000/value;
     }else{
         this->velocidade = 0;
     }

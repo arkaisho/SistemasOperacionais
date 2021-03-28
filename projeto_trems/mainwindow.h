@@ -21,11 +21,6 @@ public slots:
     void updateInterface(int,int,int);
 
 private slots:
-
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
     void on_trem_1_slider_valueChanged(int value);
 
     void on_trem_2_slider_valueChanged(int value);
