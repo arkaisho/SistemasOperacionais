@@ -67,6 +67,8 @@ void MainWindow::on_trem_1_slider_valueChanged(int value)
     trem1->setVelocidade(value);
     if (value!=0) {
         ui->velocidade_trem_1->setText(QString::number(value));
+    }else{
+        ui->velocidade_trem_1->setText("0");
     }
 }
 
@@ -75,6 +77,8 @@ void MainWindow::on_trem_2_slider_valueChanged(int value)
     trem2->setVelocidade(value);
     if (value!=0) {
         ui->velocidade_trem_2->setText(QString::number(value));
+    }else{
+        ui->velocidade_trem_2->setText("0");
     }
 }
 
@@ -83,6 +87,8 @@ void MainWindow::on_trem_3_slider_valueChanged(int value)
     trem3->setVelocidade(value);
     if (value!=0) {
         ui->velocidade_trem_3->setText(QString::number(value));
+    }else{
+        ui->velocidade_trem_3->setText("0");
     }
 }
 
@@ -91,6 +97,8 @@ void MainWindow::on_trem_4_slider_valueChanged(int value)
     trem4->setVelocidade(value);
     if (value!=0) {
         ui->velocidade_trem_4->setText(QString::number(value));
+    }else{
+        ui->velocidade_trem_4->setText("0");
     }
 }
 
@@ -99,5 +107,7 @@ void MainWindow::on_trem_5_slider_valueChanged(int value)
     trem5->setVelocidade(value);
     if (value!=0) {
         ui->velocidade_trem_5->setText(QString::number(value));
+    }else{
+        ui->velocidade_trem_5->setText("0");
     }
 }
