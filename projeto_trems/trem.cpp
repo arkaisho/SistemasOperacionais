@@ -50,18 +50,6 @@ void Trem::run(){
                 break;
             case 2:
 
-                if(x==220 && y==130){
-                    region4.lock();
-                }
-                if(x==130 && y==100){
-                    region4.unlock();
-                }
-                if(x==160 && y==130){
-                    region1.lock();
-                }
-                if(x==160 && y==10){
-                    region1.unlock();
-                }
                 if(x==220 && y==10){
                     region2.lock();
                 }
@@ -73,6 +61,18 @@ void Trem::run(){
                 }
                 if(x==160 && y==130){
                     region5.unlock();
+                }
+                if(x==220 && y==130){
+                    region4.lock();
+                }
+                if(x==130 && y==100){
+                    region4.unlock();
+                }
+                if(x==160 && y==130){
+                    region1.lock();
+                }
+                if(x==160 && y==10){
+                    region1.unlock();
                 }
 
                 if (y == 10 && x <250)
@@ -111,13 +111,6 @@ void Trem::run(){
                 emit updateGUI(ID, x,y);
                 break;
             case 4:
-
-                if(x==160 && y==130){
-                    region7.lock();
-                }
-                if(x==160 && y==250){
-                    region7.unlock();
-                }
                 if(x==70 && y==160){
                     region3.lock();
                 }
@@ -129,6 +122,12 @@ void Trem::run(){
                 }
                 if(x==190 && y==160){
                     region4.unlock();
+                }
+                if(x==160 && y==130){
+                    region7.lock();
+                }
+                if(x==160 && y==250){
+                    region7.unlock();
                 }
 
                 if (y == 130 && x <190)
