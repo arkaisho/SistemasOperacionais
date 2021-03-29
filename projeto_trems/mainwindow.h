@@ -13,6 +13,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
@@ -34,7 +35,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    //Cria os objetos TREM's
     Trem *trem1;
     Trem *trem2;
     Trem *trem3;
@@ -42,4 +42,4 @@ private:
     Trem *trem5;
 };
 
-#endif // MAINWINDOW_H
+#endif
